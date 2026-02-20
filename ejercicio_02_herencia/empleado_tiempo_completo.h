@@ -14,15 +14,12 @@ public:
     EmpleadoTiempoCompleto(std::string nombre, std::string id, float salarioBase,
                            int horasSemanales, float bono);
 
-    // Setters
     void actualizarHorasSemanales(int horas);
     void actualizarBono(float bono);
 
-    // Getters
     int obtenerHorasSemanales() const;
     float obtenerBono() const;
 
-    // Métodos
     void mostrarInformacion() const override;
     float calcularSalarioTotal() const;
 };
