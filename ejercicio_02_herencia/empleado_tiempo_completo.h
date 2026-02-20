@@ -9,7 +9,6 @@ private:
     float bono;
 
 public:
-    // Constructores
     EmpleadoTiempoCompleto();
     EmpleadoTiempoCompleto(std::string nombre, std::string id, float salarioBase,
                            int horasSemanales, float bono);
