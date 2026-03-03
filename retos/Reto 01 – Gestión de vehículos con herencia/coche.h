@@ -1,7 +1,6 @@
 #ifndef COCHE_H
 #define COCHE_H
 
-#include <string>
 #include "vehiculo.h"
 
 class Coche : public Vehiculo {
@@ -9,18 +8,15 @@ private:
     int numeroPuertas;
 
 public:
-    // Constructores
     Coche();
-    Coche(std::string marca, std::string modelo, int anio, int numeroPuertas);
+    Coche(std::string marca, std::string modelo, int anio,
+          std::string placa, int numeroPuertas);
 
-    // Setter
     void actualizarNumeroPuertas(int nuevoNumero);
 
-    // Sobrescritura del método mostrarInformacion
-    void mostrarInformacion();
+    void mostrarInformacion() override;
 
-    // Getter
     int obtenerNumeroPuertas();
 };
 
-#endif // COCHE_H
+#endif
