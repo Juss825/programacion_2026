@@ -16,7 +16,6 @@ public:
     Vehiculo();
     Vehiculo(std::string marca, std::string modelo, int anio, std::string placa);
 
-    // Métodos para actualizar
     void actualizarMarca(std::string nuevaMarca);
     void actualizarModelo(std::string nuevoModelo);
     void actualizarAnio(int nuevoAnio);
@@ -24,7 +23,6 @@ public:
 
     virtual void mostrarInformacion();
 
-    // Getters
     std::string obtenerMarca();
     std::string obtenerModelo();
     int obtenerAnio();
